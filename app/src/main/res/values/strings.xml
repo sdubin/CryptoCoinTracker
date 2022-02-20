@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CryptoCoinTracker</string>
+    <string name="title_home">Bitcon Tracker</string>
+    <string name="title_dashboard">Alt Coins Tracker</string>
+    <string name="title_notifications">About</string>
+    <string name="developer">Sherry Easter Dubin</string>
+</resources>
