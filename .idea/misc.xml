@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.112" />
+        <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.112" />
+        <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.112" />
+        <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/layout/activity_main.xml" value="0.20923913043478262" />
         <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/layout/fragment_dashboard.xml" value="0.16" />
         <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/14074/AndroidStudioProjects/CryptoCoinTracker2/app/src/main/res/layout/fragment_notifications.xml" value="0.14895833333333333" />

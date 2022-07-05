@@ -11,12 +11,18 @@ import androidx.lifecycle.ViewModelProvider
 import com.dexcom.sdubin.cryptocointracker.CoinDeskDataClasses
 import com.dexcom.sdubin.cryptocointracker.CoinDeskService
 import com.dexcom.sdubin.cryptocointracker.R
+import com.dexcom.sdubin.cryptocointracker.TimeData
 import com.dexcom.sdubin.cryptocointracker.databinding.FragmentHomeBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.math.BigDecimal
+import java.math.BigDecimal.ROUND_UP
+import java.math.MathContext
+import java.time.LocalDate
+import kotlin.math.roundToInt
 
 
 private const val TAG = "HomeFragment"
@@ -76,19 +82,17 @@ class HomeFragment : Fragment() {
                     return
                 }
 
-                //                var timeInfo:TimeData = body.time.updated
+//                                var timeInfo: TimeData = body.time.updated
 
-                var timeUTC = body.time.updated.toString()
+                var timeUTC = body.time.updated
                 tvDate.text = timeUTC
-
-                var bitcoinPrice = body.bpi.usd.rate.toString()
-//                var temp = body.bpi.usd.rate.toDouble()
-//                "%.2f".format(body.bpi.usd.rate).toDouble()
-
 //                val timeLocal = LocalDate.of()
-
 //                var temp2 = String.format("%.2f", temp)
-                tvBitcoinPrice.text = "$ "+ bitcoinPrice
+
+                var bitcoinPrice = body.bpi.usd.rate
+                val dollars = bitcoinPrice.split(".")[0]
+                val cents = bitcoinPrice.split(".")[1].toFloat().div(100).roundToInt().toString()
+                tvBitcoinPrice.text = "$$dollars.$cents"
 
             }
 
